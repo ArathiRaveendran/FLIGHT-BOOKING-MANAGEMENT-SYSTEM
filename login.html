@@ -2,36 +2,92 @@
 <html>
 
 <head>
+    <title>Login</title>
 
-<title>Login</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f6ff;
+            margin: 0;
+        }
 
-<link rel="stylesheet" href="style.css">
+        .header {
+            background: #1e88e5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
 
+        .container {
+            width: 35%;
+            margin: auto;
+            margin-top: 60px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #1e88e5;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1565c0;
+        }
+    </style>
 </head>
 
 <body>
 
-<h1>Login</h1>
+<div class="header">
+    🔐 Login
+</div>
 
-<form action="login.php" method="post">
+<div class="container">
 
-Username:
-<br><br>
+    <div class="card">
 
-<input type="text" name="username">
+        <form action="login.php" method="post">
 
-<br><br>
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Enter username" required>
 
-Password:
-<br><br>
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter password" required>
 
-<input type="password" name="password">
+            <button type="submit">Login</button>
 
-<br><br>
+        </form>
 
-<input type="submit" value="Login">
+    </div>
 
-</form>
+</div>
 
 </body>
 
