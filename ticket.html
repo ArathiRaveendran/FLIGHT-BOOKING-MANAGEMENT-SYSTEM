@@ -1,23 +1,95 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <title>Generate Ticket</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f6ff;
+            margin: 0;
+        }
+
+        .header {
+            background: #1e88e5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 40%;
+            margin: auto;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #1e88e5;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1565c0;
+        }
+    </style>
+</head>
+
 <body>
 
-<h2>Ticket Booking</h2>
+<div class="header">
+    🎟 Generate Ticket
+</div>
 
-<form action="ticket.php" method="post">
+<div class="container">
 
-Passenger ID:
-<input type="text" name="passenger_id"><br><br>
+    <div class="card">
 
-Flight ID:
-<input type="text" name="flight_id"><br><br>
+        <form action="ticket.php" method="post">
 
-Price:
-<input type="text" name="price"><br><br>
+            <label>Passenger ID</label>
+            <input type="text" name="passenger_id" placeholder="Enter passenger ID" required>
 
-<input type="submit" value="Generate Ticket">
+            <label>Flight ID</label>
+            <input type="text" name="flight_id" placeholder="Enter flight ID" required>
 
-</form>
+            <label>Price</label>
+            <input type="text" name="price" placeholder="Enter ticket price" required>
+
+            <button type="submit">Generate Ticket</button>
+
+        </form>
+
+    </div>
+
+</div>
 
 </body>
+
 </html>

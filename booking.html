@@ -1,27 +1,97 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <title>Passenger Booking</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f6ff;
+            margin: 0;
+        }
+
+        .header {
+            background: #1e88e5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 40%;
+            margin: auto;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #1e88e5;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1565c0;
+        }
+    </style>
+</head>
+
 <body>
 
-<h2>Passenger Booking Form</h2>
+<div class="header">
+    ✈ Passenger Booking Form
+</div>
 
-<form action="booking.php" method="post">
+<div class="container">
 
+    <div class="card">
 
-First Name:
-<input type="text" name="first_name"><br><br>
+        <form action="booking.php" method="post">
 
-Last Name:
-<input type="text" name="last_name"><br><br>
+            <label>First Name</label>
+            <input type="text" name="first_name" placeholder="Enter first name" required>
 
-Ticket Number:
-<input type="text" name="ticket_number"><br><br>
+            <label>Last Name</label>
+            <input type="text" name="last_name" placeholder="Enter last name" required>
 
-Airline Confirmation:
-<input type="text" name="airline_confirmation"><br><br>
+            <label>Ticket Number</label>
+            <input type="text" name="ticket_number" placeholder="Enter ticket number" required>
 
-<input type="submit" value="Book Ticket">
+            <label>Airline Confirmation</label>
+            <input type="text" name="airline_confirmation" placeholder="Enter confirmation code" required>
 
-</form>
+            <button type="submit">Book Ticket</button>
+
+        </form>
+
+    </div>
+
+</div>
 
 </body>
 </html>

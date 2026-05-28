@@ -3,38 +3,75 @@
 
 <head>
     <title>Flight Booking System</title>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f6ff;
+            text-align: center;
+            margin: 0;
+        }
+
+        h1 {
+            background: #1e88e5;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+
+        p {
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            margin: 15px auto;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            background: #1e88e5;
+            color: white;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 6px;
+        }
+
+        a:hover {
+            background: #1565c0;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Flight Booking System</h1>
-
+    <h1>✈ Flight Booking System</h1>
     <p>Welcome to Flight Booking Management System</p>
 
-    <hr>
+    <div class="container">
 
-    <a href="flights.php">View Flights</a>
+        <div class="card">
+            <a href="flights.php">View Flights</a>
+            <a href="search.html">Search Flights</a>
+            <a href="booking.html">Passenger Booking</a>
+            <a href="ticket.php">Generate Ticket</a>
+            <a href="viewtickets.php">View Ticket Details</a>
+            <a href="cancel.html">Cancel Ticket</a>
+        </div>
 
-    <br><br>
-
-    <a href="search.html">Search Flights</a>
-
-    <br><br>
-
-    <a href="booking.html">Passenger Booking</a>
-
-    <br><br>
-
-    <a href="ticket.php">Generate Ticket</a>
-
-    <br><br>
-
-    <a href="viewtickets.php">View Ticket Details</a>
-
-    <br><br>
-
-    <a href="cancel.html">Cancel Ticket</a>
+    </div>
 
 </body>
+
 </html>

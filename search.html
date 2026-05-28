@@ -1,17 +1,90 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <title>Search Flight</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f6ff;
+            margin: 0;
+        }
+
+        .header {
+            background: #1e88e5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 40%;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #1e88e5;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1565c0;
+        }
+
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
 <body>
-<h2>Search Flight</h2>
 
-<form action="search.php" method="post">
-Departure City:
-<input type="text" name="departure_city"><br><br>
+<div class="header">
+    ✈ Search Flight
+</div>
 
-Arrival City:
-<input type="text" name="arrival_city"><br><br>
+<div class="container">
 
-<input type="submit" value="Search">
-</form>
+    <div class="card">
+
+        <form action="search.php" method="post">
+
+            <label>Departure City</label>
+            <input type="text" name="departure_city" placeholder="Enter departure city" required>
+
+            <label>Arrival City</label>
+            <input type="text" name="arrival_city" placeholder="Enter arrival city" required>
+
+            <button type="submit">Search Flights</button>
+
+        </form>
+
+    </div>
+
+</div>
 
 </body>
 </html>
