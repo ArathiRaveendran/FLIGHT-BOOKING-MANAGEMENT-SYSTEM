@@ -18,5 +18,3 @@ A complete Flight Booking Management System developed using PHP, MySQL, HTML and
 - CSS
 - XAMPP
 
-## Project Type
-MCA Mini Project
